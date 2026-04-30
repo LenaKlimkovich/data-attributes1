@@ -1,0 +1,23 @@
+body {
+  height: 100vh;
+  display: flex;
+  color: black;
+  justify-content: center;
+  align-items: center;
+}
+
+.table {
+ 
+  border: none;
+  border-collapse: separate;
+  border-spacing: 4px;      
+}
+
+.table th,
+.table td {
+  text-align: start;
+  font-weight: 500;
+  border: 1px solid #ccc;     
+  padding: 8px;
+  background: #fff;            
+}
