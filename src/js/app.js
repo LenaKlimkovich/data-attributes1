@@ -40,7 +40,7 @@ setInterval(() => {
 
     case 1:
       trs.sort((a, b) => Number(b.dataset.id) - Number(a.dataset.id));
-      ths[0].textContent = 'id ↑';
+      ths[0].textContent = 'id';
       break;
 
     case 2:
