@@ -35,7 +35,7 @@ setInterval(() => {
       break;
 
     case 7:
-      trs.sort((a, b) => Number(b.dataset.imdb) - Number(a.dataset.imdb);
+      trs.sort((a, b) => Number(b.dataset.imdb) - Number(a.dataset.imdb));
       break;
   }
 
