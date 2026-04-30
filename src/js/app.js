@@ -8,7 +8,7 @@ const arr = [
 
 const tbody = document.getElementById('movies');
 
-// 1. Создаём строки
+
 arr.forEach((item) => {
   tbody.innerHTML += `
     <tr 

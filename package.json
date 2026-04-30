@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "live-server src",
+    "start": "webpack serve",
     "lint": "eslint . --fix",
     "build": "webpack",
     "test": "jest"

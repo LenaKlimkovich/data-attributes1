@@ -6,14 +6,15 @@ module.exports = {
   entry: './src/js/app.js',
 
   output: {
-    filename: 'bundle.js',
+    filename: 'js/app.js',
     path: path.resolve(__dirname, 'dist'),
-    clean: true,
-  },
+  }, 
 
   devServer: {
     static: './dist',
     open: true,
+    hot: false,      
+  liveReload: false 
   },
 
   module: {
