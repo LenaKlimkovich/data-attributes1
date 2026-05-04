@@ -38,6 +38,7 @@ arr.forEach((item) => {
 tbody.innerHTML = html;
 
 const trs = Array.from(document.querySelectorAll('#movies tr'));
+const ths = Array.from(document.querySelectorAll('th'));
 
 const modes = [
   { field: 'id', direction: 'asc' },
@@ -61,7 +62,6 @@ function sort(rows, field, direction) {
 
     const valA = isNumber ? Number(A) : A;
     const valB = isNumber ? Number(B) : B;
-
     if (isNumber) {
       return direction === 'asc' ? valA - valB : valB - valA;
     }
@@ -73,7 +73,12 @@ function sort(rows, field, direction) {
 
 setInterval(() => {
   const { field, direction } = modes[mode];
-
+ if(field === 'id' && direction === 'asc'){
+   ths[0].textContent = 'id ↓';
+ }
+ else {
+  ths[0].textContent = 'id';
+ }
   sort(trs, field, direction);
   tbody.replaceChildren(...trs);
 
